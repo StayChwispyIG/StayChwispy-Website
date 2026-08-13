@@ -48,12 +48,11 @@ img { max-width: 100%; display: block; }
   border-bottom: 1px solid var(--line);
 }
 
-.nav-logo {
-  font-family: 'Butcherman', cursive;
-  font-size: 1.6rem;
-  letter-spacing: 1px;
-  color: var(--red);
-  text-shadow: 2px 2px 0 var(--black-soft), -1px -1px 0 #000;
+.nav-logo { display: flex; align-items: center; }
+
+.nav-logo img {
+  height: 28px;
+  width: auto;
 }
 
 .nav-links {
@@ -148,18 +147,10 @@ img { max-width: 100%; display: block; }
   margin: 0 0 18px;
 }
 
-.wordmark {
-  font-family: 'Butcherman', cursive;
-  font-weight: 400;
-  font-size: clamp(3.5rem, 12vw, 8.5rem);
-  line-height: 0.9;
-  margin: 0;
-  color: var(--red);
-  text-shadow:
-    3px 3px 0 #000,
-    6px 6px 0 var(--black-soft),
-    0 0 40px rgba(224, 22, 31, 0.35);
-  letter-spacing: 2px;
+.wordmark-img {
+  width: clamp(280px, 46vw, 640px);
+  margin: 0 auto;
+  filter: drop-shadow(0 0 50px rgba(224, 22, 31, 0.35));
 }
 
 .tagline {
@@ -373,10 +364,11 @@ img { max-width: 100%; display: block; }
   justify-content: space-between;
 }
 
-.footer-logo {
-  font-family: 'Butcherman', cursive;
-  color: var(--red);
-  font-size: 1.2rem;
+.footer-logo { display: flex; align-items: center; }
+
+.footer-logo img {
+  height: 22px;
+  width: auto;
 }
 
 .footer-social {
