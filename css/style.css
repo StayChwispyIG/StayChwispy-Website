@@ -242,8 +242,7 @@ img { max-width: 100%; display: block; }
 
 .highlight {
   color: var(--red);
-  font-family: 'Butcherman', cursive;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .about-copy {
@@ -340,9 +339,11 @@ img { max-width: 100%; display: block; }
 }
 
 .connect-title {
-  font-family: 'Butcherman', cursive;
+  font-family: 'Archivo Black', sans-serif;
   font-weight: 400;
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: clamp(2.2rem, 5.5vw, 4rem);
   color: var(--red);
   margin: 0 0 16px;
   text-shadow: 3px 3px 0 #000;
