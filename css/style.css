@@ -415,6 +415,22 @@ img { max-width: 100%; display: block; }
   max-width: 100%;
 }
 
+.reel-grid {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 32px;
+  justify-items: center;
+}
+
+.reel-grid .reel-embed {
+  max-width: none;
+  padding: 0;
+  width: 100%;
+}
+
 /* ---------- CONNECT ---------- */
 .connect {
   padding: 130px 24px;
