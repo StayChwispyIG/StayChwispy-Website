@@ -397,6 +397,24 @@ img { max-width: 100%; display: block; }
   filter: grayscale(0) brightness(1);
 }
 
+/* ---------- FEATURED REEL ---------- */
+.featured {
+  padding: 100px 0 120px;
+  border-top: 1px solid var(--line);
+}
+
+.reel-embed {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: center;
+}
+
+.reel-embed iframe {
+  max-width: 100%;
+}
+
 /* ---------- CONNECT ---------- */
 .connect {
   padding: 130px 24px;
