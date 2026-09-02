@@ -305,7 +305,7 @@ img { max-width: 100%; display: block; }
   margin: 0 auto;
   padding: 0 24px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 24px;
 }
 
@@ -544,11 +544,12 @@ img { max-width: 100%; display: block; }
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 860px) {
   .about-grid { grid-template-columns: 1fr; gap: 28px; }
-  .platform-grid { grid-template-columns: 1fr; }
+  .platform-grid { grid-template-columns: repeat(2, 1fr); }
   .sponsor-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 520px) {
+  .platform-grid { grid-template-columns: 1fr; }
   .sponsor-grid { grid-template-columns: 1fr; }
 }
 
