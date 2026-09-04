@@ -1,0 +1,16 @@
+{
+  "name": "chwispy-transitions",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "render:cover": "remotion render src/index.ts SprayCover out/spray-cover.mp4",
+    "render:reveal": "remotion render src/index.ts SprayReveal out/spray-reveal.mp4",
+    "still:poster": "remotion still src/index.ts SprayCover out/spray-poster.png --frame=21"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "remotion": "4.0.202",
+    "@remotion/cli": "4.0.202"
+  }
+}
