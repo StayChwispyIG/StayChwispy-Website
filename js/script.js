@@ -5,6 +5,12 @@ navToggle.addEventListener('click', () => {
   nav.classList.toggle('open');
 });
 
+const toggleNavScrolled = () => {
+  nav.classList.toggle('scrolled', window.scrollY > 8);
+};
+toggleNavScrolled();
+window.addEventListener('scroll', toggleNavScrolled, { passive: true });
+
 document.querySelectorAll('.nav-links a').forEach((link) => {
   link.addEventListener('click', () => nav.classList.remove('open'));
 });
