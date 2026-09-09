@@ -702,6 +702,15 @@ img { max-width: 100%; display: block; }
   .nav-links { display: none; }
   .nav-toggle { display: flex; }
 
+  /* With the links hidden, space-between would strand the CTA mid-bar.
+     Group it against the toggle and scale it down to the logo's weight. */
+  .nav-cta {
+    margin-left: auto;
+    margin-right: 16px;
+    padding: 9px 15px;
+    font-size: 0.68rem;
+  }
+
   .nav.open {
     background: var(--black);
     border-bottom-color: var(--red);
