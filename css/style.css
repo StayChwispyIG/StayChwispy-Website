@@ -489,6 +489,13 @@ img { max-width: 100%; display: block; }
   font-size: 0.85rem;
 }
 
+.spec-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  justify-content: flex-end;
+}
+
 .spec-link {
   font-family: "Archivo Black", -apple-system, sans-serif;
   font-size: 0.72rem;
@@ -682,6 +689,7 @@ img { max-width: 100%; display: block; }
   .platform-grid { grid-template-columns: repeat(2, 1fr); }
   .sponsor-grid { grid-template-columns: repeat(2, 1fr); }
   .spec-row { grid-template-columns: 1fr; gap: 8px; }
+  .spec-links { justify-content: flex-start; }
 }
 
 @media (max-width: 560px) {
